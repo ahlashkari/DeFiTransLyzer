@@ -1,2 +1,2 @@
-# DeFiLyzer
+# DeFiTranLyzer
 DeFi Transaction Analyzer
