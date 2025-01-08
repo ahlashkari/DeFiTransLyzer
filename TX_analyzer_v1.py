@@ -185,11 +185,3 @@ def extract_combined_features(path_of_file):
             # flattened_extracted_features[key] = values[0]
             continue
     return merge_nested_dicts(flattened_extracted_features)
-
-# file_path = 'second version/0x29e225d888cf11c5e67613bffd30bcf071eb3d4a_0xc0b875b0539f7a279ecb6fad09ea38f80eb9e161f07dc45bb6a48726dec015a4.json'
-# file_path = 'second version/0x1de23F02E185fDc4f6BACc98D6c6419370E38538_0x8c8966283dd8997db2f6ad6214a9183a3276081793c967c108eacca8613ecf61.json'
-# file_path = 'second version/0xc1E6e4D9Fc0B7e555bb8634BcACc9A1067bEC039_0xabf104cbb12e312422973a143f50f66022dcceb508f2cac65befd5970556d647.json'
-
-# features = extract_combined_features(file_path)
-# print(features)
-# print(len(features))
