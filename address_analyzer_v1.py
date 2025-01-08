@@ -60,8 +60,18 @@ def math_features_calc(list_of_parameters, prefix=''):
     }
 
 def Address_Analyzer(path):
-    with open(path, 'r') as file:
-        data = json.load(file)
+    try:
+        # Attempt to open and read the file
+        with open(path, 'r') as file:
+            data = json.load(file)
+    except FileNotFoundError:
+        # Handle the case where the file does not exist
+        print(f"Error: The file '{path}' was not found.")
+        return None
+    except json.JSONDecodeError:
+        # Handle the case where the file is not a valid JSON
+        print(f"Error: The file '{path}' is not a valid JSON.")
+        return None
 
     num_transfers = len(data['result[1]'])  # total transactions in the dataset  ---- WORKED!
     if num_transfers > 1:
