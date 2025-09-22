@@ -15,7 +15,8 @@ Together, the Wallet Analyzer and Transaction Analyzer offer a unified toolchain
 
 - [Installation](#installation)
 - [Extracted Features](#extracted-features)
-  * [Definitions](#definitions)
+  * [DeFiTransLyzer Features Details: Transaction](#Transaction)
+  * [DeFiTranLyzer Features Details: Wallet](#Wallet)
   * [Statistical Information Calculation](#statistical-information-calculation)
 - [Output](#output)
 - [Copyright (c) 2023](#copyright-c-2023)
@@ -41,7 +42,23 @@ Also, this project has been successfully tested on Windows10, OS X.
 
 ![](https://github.com/ahlashkari/DeFiTransLyzer/blob/main/DeFiTransLyzer_features.jpg)
 
-DeFiTransLyzer Features Details: Transaction
+## Transaction
+Got it ✅ Since you already have the **tables** in your GitHub, the best approach is to add **short explanatory paragraphs** before each table, and then have a **dedicated section at the bottom** for the mathematical/statistical definitions. That way, your tables stay clean, but readers can easily understand the formulas behind features without clutter.
+
+Here’s a clean version you can drop in:
+
+---
+
+# DeFiTransLyzer Feature Documentation
+
+## Definitions
+
+### Transaction Features
+
+Transaction-level features capture the intrinsic properties of **individual Ethereum transactions**, including address characteristics, gas consumption, log details, block metadata, execution status, and token transfers. These features are primarily descriptive, though some involve direct calculations such as total gas cost ($\text{gasused} \times \text{effectivegasprice}$) or gas efficiency ($\text{value}/\text{gasused}$). Together, they provide a fine-grained view of how each transaction behaves on-chain.
+
+➡️ *See the table below for full feature details.*
+
 
 | SubCat.                     | Feature name            | Description                                                       |
 |----------------------------|-------------------------|-------------------------------------------------------------------|
@@ -72,7 +89,10 @@ DeFiTransLyzer Features Details: Transaction
 | Token Related              | tokentransferamount     | Amount of tokens transferred in the transaction.                  |
 |                            | normalizedtokentransfer | Normalized value of tokens transferred.                           |
 
-DeFiTranLyzer Features Details: Wallet
+## Wallet
+Wallet-level features represent aggregated statistics derived from all transactions associated with a given wallet. Instead of raw values, they summarize behavioral patterns across transactions using statistical measures such as summation, average, median, variance, standard deviation, skewness, and coefficient of variation. These allow deeper profiling of wallet activity over time, highlighting trends and anomalies such as unusually high gas costs, irregular nonce increments, or abnormal value transfers.
+
+➡️ *See the table below for full feature details.*
 
 | SubCat.                     | Feture name                             | Description                                                |
 |-----------------------------|-----------------------------------------|------------------------------------------------------------|
@@ -140,6 +160,18 @@ DeFiTranLyzer Features Details: Wallet
 |                             | numtransaction                          | Total number of transactions.                              |
 |                             | duration                                | Time duration from the first to     the last transaction.  |
 
+## Statistical Information Calculation
+The following statistical parameters are used across wallet-level features:
+
+* **Summation ($\sum x_i$)**: Total of all values.
+* **Average / Mean ($\mu = \frac{1}{n}\sum x_i$)**: Central tendency.
+* **Median**: Middle value in the ordered distribution.
+* **Standard Deviation ($\sigma = \sqrt{\frac{1}{n}\sum (x_i - \mu)^2}$)**: Dispersion around the mean.
+* **Variance ($\sigma^2$)**: Squared deviation measure.
+* **Range ($\max(x) - \min(x)$)**: Spread between maximum and minimum values.
+* **Skewness**: Degree of asymmetry in the distribution.
+* **Mode**: Most frequent value.
+* **Coefficient of Variation (CV = $\sigma / \mu$)**: Normalized variability relative to the mean.
 
 # Copyright (c) 2023
 
