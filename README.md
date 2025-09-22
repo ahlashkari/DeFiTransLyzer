@@ -35,6 +35,6 @@ python main.py path_to_solidity_source_file.sol
 ```
 Also, this project has been successfully tested on Windows10, OS X. 
 
-
+# Extracted Features
 
 ![](https://github.com/ahlashkari/DeFiTransLyzer/blob/main/DeFiTransLyzer_features.jpg)
