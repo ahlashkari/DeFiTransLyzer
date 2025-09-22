@@ -211,15 +211,16 @@ Wallet-level features represent aggregated statistics derived from all transacti
 ## Statistical Information Calculation
 The following statistical parameters are used across wallet-level features:
 
-* **Summation ($\sum x_i$)**: Total of all values.
-* **Average / Mean ($\mu = \frac{1}{n}\sum x_i$)**: Central tendency.
-* **Median**: Middle value in the ordered distribution.
-* **Standard Deviation ($\sigma = \sqrt{\frac{1}{n}\sum (x_i - \mu)^2}$)**: Dispersion around the mean.
-* **Variance ($\sigma^2$)**: Squared deviation measure.
-* **Range ($\max(x) - \min(x)$)**: Spread between maximum and minimum values.
-* **Skewness**: Degree of asymmetry in the distribution.
-* **Mode**: Most frequent value.
-* **Coefficient of Variation (CV = $\sigma / \mu$)**: Normalized variability relative to the mean.
+* **Summation ($\sum x_i$)**: Total of all values.  
+* **Average / Mean ($\mu = \frac{1}{n}\sum x_i$)**: Central tendency.  
+* **Median**: Middle value in the ordered distribution.  
+* **Standard Deviation ($\sigma = \sqrt{\frac{1}{n}\sum (x_i - \mu)^2}$)**: Dispersion around the mean.  
+* **Variance ($\sigma^2$)**: Squared deviation measure.  
+* **Range ($\max(x) - \min(x)$)**: Spread between maximum and minimum values.  
+* **Skewness**: Degree of asymmetry in the distribution.  
+* **Mode**: Most frequent value.  
+* **Coefficient of Variation (CV = $\sigma / \mu$)**: Normalized variability relative to the mean.  
+
 
 # Copyright (c) 2023
 
