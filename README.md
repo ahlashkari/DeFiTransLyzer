@@ -25,17 +25,78 @@ Together, the Wallet Analyzer and Transaction Analyzer offer a unified toolchain
 - [Acknowledgment](#acknowledgment)
 
 
+# installation
+You can run `main.py` directly from the command line after installing the requirements.
+Here are the three scenarios script supports:
+
+---
+
+### 1. **Analyze one address JSON file**
+
+```bash
+python main.py --address path/to/address.json
+```
+
+This will produce a CSV in the same directory (or the `--outdir` if you specify it), named like:
+
+```
+DeFiTransLyzer_address_address.json.csv
+```
+
+(basically: `DeFiTransLyzer_address_<filename>.csv`)
+
+---
+
+### 2. **Analyze one transaction JSON file**
+
+```bash
+python main.py --tx path/to/transaction.json
+```
+
+This will produce:
+
+```
+DeFiTransLyzer_transaction_transaction.json.csv
+```
+
+---
+
+### 3. **Analyze both address + transaction files**
+
+```bash
+python main.py --address path/to/address.json --tx path/to/transaction.json
+```
+
+This will produce **three CSVs**:
+
+* `DeFiTransLyzer_address_<address-filename>.csv`
+* `DeFiTransLyzer_transaction_<tx-filename>.csv`
+* `DeFiTransLyzer_details_<address-filename>__<tx-filename>.csv`
+
+The last one is the **combined file**, with all address features prefixed by `addr_` and all transaction features prefixed by `tx_`.
+
+---
+
+### 4. **Optional: custom output directory**
+
+By default, CSVs are written in the current folder. You can change this with `--outdir`:
+
+```bash
+python main.py --address path/to/address.json --tx path/to/transaction.json --outdir results/
+```
+
+This will create the folder `results/` if it doesn’t exist, and write the CSVs there.
+
+---
+
+✅ Before running, make sure dependencies are installed:
+
 You must install the requirements in your system before you can begin installing or running anything. To do so, you can easily run this command:
 
 ```bash
 sudo pip3 install -r requirements.txt
 ```
 
-You are now ready to execute DeFiTransLyzer-, run this command:
-
-```bash
-python main.py path_to_solidity_source_file.sol
-```
 Also, this project has been successfully tested on Windows10, OS X. 
 
 # Extracted Features
