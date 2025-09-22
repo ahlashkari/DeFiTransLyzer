@@ -41,7 +41,104 @@ Also, this project has been successfully tested on Windows10, OS X.
 
 ![](https://github.com/ahlashkari/DeFiTransLyzer/blob/main/DeFiTransLyzer_features.jpg)
 
+DeFiTransLyzer Features Details: Transaction
 
+| SubCat.                     | Feature name            | Description                                                       |
+|----------------------------|-------------------------|-------------------------------------------------------------------|
+| Address Related            | length__from_address       | The length of the 'from' address in the transaction.              |
+|                            | length_to_address         | The length of the 'to' address in the transaction.                |
+|                            | from_is_same_as_to_address   | Boolean indicating if the 'from' and 'to' addresses are the same. |
+| Gas Related                | gasused                 | The amount of gas used for the transaction.                       |
+|                            | effectivegasprice       | The price per unit of gas paid in the transaction.                |
+|                            | totalgascost            | The total cost of gas used (gasused * effectivegasprice).         |
+|                            | gasperlogevent          | Gas used per log event in the transaction.                        |
+|                            | cumulativegasused       | Total gas used in the block up to this transaction.               |
+|                            | gaspriceratio           | Ratio of gas price to some baseline or previous price.            |
+|                            | gasefficiency           | A measure of transaction efficiency based on gas usage.           |
+| Log Related                | logcount                | Number of log entries in the transaction.                         |
+|                            | logremoved              | Indicates whether any logs were removed.                          |
+|                            | logindex                | Index of the log within the transaction.                          |
+|                            | lengthlog               | Length of the log data.                                           |
+| Block Related              | value                   | The value transferred in the transaction.                         |
+|                            | index                   | Transaction index in the block.                                   |
+|                            | chainid                 | Identifier of the blockchain network.                             |
+|                            | blocknumber             | The block number in which the transaction is recorded.            |
+|                            | comingfromcontract      | Boolean indicating if the transaction originated from a contract. |
+|                            | lengthtransactionhash   | Length of the transaction hash.                                   |
+| Transaction Status Related | eventactivityflag       | Flag indicating specific event activity.                          |
+|                            | message                 | Message associated with the transaction.                          |
+|                            | status                  | Status of the transaction (e.g., success, fail).                  |
+|                            | Error!                  | Any errors returned by the transaction execution.                 |
+| Token Related              | tokentransferamount     | Amount of tokens transferred in the transaction.                  |
+|                            | normalizedtokentransfer | Normalized value of tokens transferred.                           |
+
+DeFiTranLyzer Features Details: Wallet
+
+| SubCat.                     | Feture name                             | Description                                                |
+|-----------------------------|-----------------------------------------|------------------------------------------------------------|
+| Error Related               | numberoferrors                          | Total number of errors     encountered.                    |
+|                             | errorrate                               | Proportion of transactions that resulted in errors.        |
+| GasUsed Related             | gasusedsummation                        | Sum of gas used across     transactions.                   |
+|                             | gasusedaverage                          | Average gas used per transaction.                          |
+|                             | gasusedmedian                           | Median gas used per transaction.                           |
+|                             | gasusedstandarddeviation                | Standard deviation of gas used.                            |
+|                             | gasusedmaximumval                       | Maximum gas used in a single     transaction.              |
+|                             | gasusedminimumval                       | Minimum gas used across     transactions.                  |
+|                             | gasusedvariance                         | Variance of gas used across     transactions.              |
+|                             | gasusedrangevalue                       | Range between maximum and minimum     gas used.            |
+|                             | gasusedskewness                         | Skewness of the gas used distribution.                     |
+|                             | gasusedmode                             | Mode of the gas used across transactions.                  |
+|                             | gasusedcoefficientofvariation           | Coefficient of variation of gas used.                      |
+| Gas Prices Related          | gaspricessummation                      | Sum of gas prices across     transactions.                 |
+|                             | gaspricesaverage                        | Average gas prices per     transaction.                    |
+|                             | gaspricesmedian                         | Median gas prices per transaction.                         |
+|                             | gaspricesstandarddeviation              | Standard deviation of gas prices.                          |
+|                             | gaspricesmaximumval                     | Maximum gas price in a single     transaction.             |
+|                             | gaspricesminimumval                     | Minimum gas prices across     transactions.                |
+|                             | gaspricesvariance                       | Variance of gas prices across     transactions.            |
+|                             | gaspricesrangevalue                     | Range between maximum and minimum     gas prices.          |
+|                             | gaspricesskewness                       | Skewness of the gas prices     distribution.               |
+|                             | gaspricesmode                           | Mode of the gas prices across     transactions.            |
+|                             | gaspricescoefficientofvariation         | Coefficient of variation of gas     prices.                |
+| Cumulative Gas Used Related | cumulativeGasUsedsummation              | Sum of cumulative gas used across     transactions.        |
+|                             | cumulativeGasUsedaverage                | Average cumulative gas used per     transaction.           |
+|                             | cumulativeGasUsedmedian                 | Median cumulative gas used per     transaction.            |
+|                             | cumulativeGasUsedstandarddeviation      | Standard deviation of cumulative     gas used.             |
+|                             | cumulativeGasUsedmaximumval             | Maximum cumulative gas used in a     single transaction.   |
+|                             | cumulativeGasUsedminimumval             | Minimum cumulative gas used across     transactions.       |
+|                             | cumulativeGasUsedvariance               | Variance of cumulative gas used     across transactions.   |
+|                             | cumulativeGasUsedrangevalue             | Range between maximum and minimum     cumulative gas used. |
+|                             | cumulativeGasUsedskewness               | Skewness of the cumulative gas     used distribution.      |
+|                             | cumulativeGasUsedmode                   | Mode of the cumulative gas used     across transactions.   |
+|                             | cumulativeGasUsedcoefficientofvariation | Coefficient of variation of     cumulative gas used.       |
+| Values Related              | valuessummation                         | Sum of values transferred across     transactions.         |
+|                             | valuesaverage                           | Average value transferred per     transaction.             |
+|                             | valuesmedian                            | Median value transferred per     transaction.              |
+|                             | valuesstandarddeviation                 | Standard deviation of values     transferred.              |
+|                             | valuesmaximumval                        | Maximum value transferred in a     single transaction.     |
+|                             | valuesminimumval                        | Minimum value transferred across     transactions.         |
+|                             | valuesvariance                          | Variance of values transferred     across transactions.    |
+|                             | valuesrangevalue                        | Range between maximum and minimum     values transferred.  |
+|                             | valuesskewness                          | Skewness of the values transferred     distribution.       |
+|                             | valuesmode                              | Mode of the values transferred     across transactions.    |
+|                             | valuescoefficientofvariation            | Coefficient of variation of values     transferred.        |
+| Nonce Related               | noncesummation                          | Sum of nonce values used across     transactions.          |
+|                             | nonceaverage                            | Average nonce used per     transaction.                    |
+|                             | noncemedian                             | Median nonce used per transaction.                         |
+|                             | noncestandarddeviation                  | Standard deviation of nonce used.                          |
+|                             | noncemaximumval                         | Maximum nonce used in a single     transaction.            |
+|                             | nonceminimumval                         | Minimum nonce used across     transactions.                |
+|                             | noncevariance                           | Variance of nonce used across     transactions.            |
+|                             | noncerangevalue                         | Range between maximum and minimum     nonce used.          |
+|                             | nonceskewness                           | Skewness of the nonce used     distribution.               |
+|                             | noncemode                               | Mode of the nonce used across     transactions.            |
+|                             | noncecoefficientofvariation             | Coefficient of variation of nonce used.                    |
+| Count Related               | numberoffromaddress                     | Total number of 'from' addresses used.                     |
+|                             | numberofuniquefromaddress               | Number of unique 'from' addresses.                         |
+|                             | numberoftoaddress                       | Total number of 'to' addresses     involved.               |
+|                             | numberofuniquetoaddress                 | Number of unique 'to' addresses.                           |
+|                             | numtransaction                          | Total number of transactions.                              |
+|                             | duration                                | Time duration from the first to     the last transaction.  |
 
 
 # Copyright (c) 2023
