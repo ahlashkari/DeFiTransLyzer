@@ -97,7 +97,7 @@ You must install the requirements in your system before you can begin installing
 sudo pip3 install -r requirements.txt
 ```
 
-Also, this project has been successfully tested on Windows10, OS X. 
+Also, this project has been successfully tested on Ubuntu, Windows10, and OS X. 
 
 # Extracted Features
 
