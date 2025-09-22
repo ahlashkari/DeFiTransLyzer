@@ -29,8 +29,8 @@ from typing import Any, Dict, Iterable, Tuple, List
 import pandas as pd
 
 # Your uploaded analyzers
-from TX_analyzer_v1 import extract_combined_features
-from address_analyzer_v1 import Address_Analyzer
+from TX_analyzer import extract_combined_features
+from address_analyzer import Address_Analyzer
 
 
 # ---------------------------
