@@ -40,3 +40,23 @@ Also, this project has been successfully tested on Windows10, OS X.
 # Extracted Features
 
 ![](https://github.com/ahlashkari/DeFiTransLyzer/blob/main/DeFiTransLyzer_features.jpg)
+
+
+
+
+# Copyright (c) 2023
+
+DeFiTransLyzer V1.0: For citation in your works and also understanding DeFiTransLyzer V1.0 completely, you can find below-published papers:
+
+[Arash Habibi Lashkari, Sepideh Hajihosseinkhani, Joshua Duarte, Isabella Lopez, Ziba Habibi Lashkari, Sergio Rios-Aguilar, “Advanced Genetic Algorithm and Penalty Fitness Function for Enhancing DeFi Security and Detecting Ethereum Fraud Transactions”, Blockchain: Research and Applications, Available online 3 September 2025]((https://www.sciencedirect.com/science/article/pii/S2096720925001034))
+
+
+### Project Team members 
+
+* [**Arash Habibi Lashkari:**](http://ahlashkari.com/index.asp) Founder and Project Owner 
+
+* [**Sepideh HajHosseinkhani:**](https://github.com/Sepid-99) Researcher and Developer 
+
+### Acknowledgement 
+This project has been made possible through funding from the Natural Sciences and Engineering Research Council of Canada — NSERC (#RGPIN-2020-04701) and Canada Research Chair (Tier II) - (#CRC-2021-00340) to Arash Habibi Lashkari.
+
