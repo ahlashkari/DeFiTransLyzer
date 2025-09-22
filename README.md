@@ -88,8 +88,7 @@ python main.py --address path/to/address.json --tx path/to/transaction.json --ou
 This will create the folder `results/` if it doesn’t exist, and write the CSVs there.
 
 ---
-
-✅ Before running, make sure dependencies are installed:
+Before running, make sure dependencies are installed:
 
 You must install the requirements in your system before you can begin installing or running anything. To do so, you can easily run this command:
 
@@ -106,7 +105,7 @@ Also, this project has been successfully tested on Ubuntu, Windows10, and OS X.
 ## Transaction
 Transaction-level features capture the intrinsic properties of **individual Ethereum transactions**, including address characteristics, gas consumption, log details, block metadata, execution status, and token transfers. These features are primarily descriptive, though some involve direct calculations such as total gas cost ($\text{gasused} \times \text{effectivegasprice}$) or gas efficiency ($\text{value}/\text{gasused}$). Together, they provide a fine-grained view of how each transaction behaves on-chain.
 
-➡️ *See the table below for full feature details.*
+*See the table below for full feature details.*
 
 
 | SubCat.                     | Feature name            | Description                                                       |
@@ -141,7 +140,7 @@ Transaction-level features capture the intrinsic properties of **individual Ethe
 ## Wallet
 Wallet-level features represent aggregated statistics derived from all transactions associated with a given wallet. Instead of raw values, they summarize behavioral patterns across transactions using statistical measures such as summation, average, median, variance, standard deviation, skewness, and coefficient of variation. These allow deeper profiling of wallet activity over time, highlighting trends and anomalies such as unusually high gas costs, irregular nonce increments, or abnormal value transfers.
 
-➡️ *See the table below for full feature details.*
+*See the table below for full feature details.*
 
 | SubCat.                     | Feture name                             | Description                                                |
 |-----------------------------|-----------------------------------------|------------------------------------------------------------|
