@@ -9,8 +9,7 @@ The Transaction Analyzer module complements this process by parsing individual t
 
 Together, the Wallet Analyzer and Transaction Analyzer offer a unified toolchain for profiling Ethereum blockchain activity. By systematically capturing both wallet- and transaction-level features, DeFiTransLyzer provides a detailed analytical framework that supports vulnerability research, behavioral modeling, and the broader study of decentralized finance ecosystems.
 
-![](https://github.com/ahlashkari/DeFiTransLyzer/blob/main/analyzer arch.jpg)
-
+![](https://github.com/ahlashkari/DeFiTransLyzer/blob/main/DeFiTranLyzer_architecture.jpg)
 
 # Table of Contents
 
