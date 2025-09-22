@@ -1,7 +1,7 @@
 import json
 import os 
 import re
-from address_analyzer_sepideh_v1 import math_features_calc
+from address_analyzer import math_features_calc
 
 def merge_nested_dicts(d):
     """
