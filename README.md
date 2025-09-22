@@ -43,18 +43,6 @@ Also, this project has been successfully tested on Windows10, OS X.
 ![](https://github.com/ahlashkari/DeFiTransLyzer/blob/main/DeFiTransLyzer_features.jpg)
 
 ## Transaction
-Got it ✅ Since you already have the **tables** in your GitHub, the best approach is to add **short explanatory paragraphs** before each table, and then have a **dedicated section at the bottom** for the mathematical/statistical definitions. That way, your tables stay clean, but readers can easily understand the formulas behind features without clutter.
-
-Here’s a clean version you can drop in:
-
----
-
-# DeFiTransLyzer Feature Documentation
-
-## Definitions
-
-### Transaction Features
-
 Transaction-level features capture the intrinsic properties of **individual Ethereum transactions**, including address characteristics, gas consumption, log details, block metadata, execution status, and token transfers. These features are primarily descriptive, though some involve direct calculations such as total gas cost ($\text{gasused} \times \text{effectivegasprice}$) or gas efficiency ($\text{value}/\text{gasused}$). Together, they provide a fine-grained view of how each transaction behaves on-chain.
 
 ➡️ *See the table below for full feature details.*
